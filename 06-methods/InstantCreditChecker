@@ -1,0 +1,37 @@
+/*
+In this module,the key concepts I learnt are that , when declaring a 
+method in the main function, it follows the same order that the function
+was defined.
+
+*/
+
+
+import java.util.Scanner
+
+public class InstantCreditChecker() {
+    
+    public static void main(String[] args) {
+        //Get input
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter your credit score: ")
+        double salary = scanner.nextDouble();
+        
+        System.out.println("Enter your credit score: ");
+        int creditScore =  scanner.nextInt();
+        scanner.close();
+        
+        isUserQualified(salary,creditScore);
+    
+    }
+    
+    public static void isUserQualified(double salary , int creditScore){
+        if (salary >= 25 000 || creditScore >= 750) {
+            System.out.println("Congratulations , you qualify!");
+        
+        }
+        else {
+            System.out.println("Sorry");
+        }
+    }
+    
+}
